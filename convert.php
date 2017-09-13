@@ -47,7 +47,7 @@ if (isset($_POST['cert'])) {
     $fileCA  = date('YmdHis', time()) . "-ca.txt";
     $tempDir = date('YmdHis', time()) . "-" . $_SESSION['post-data']['domain'];
     
-    $createTempDir = mkdir("tmp/$tempDir", 0755);
+    $createTempDir = mkdir("tmp/$tempDir", 0755, TRUE);
         
     if ($cert != null) {
         $fileSSLwrite = fopen("./tmp/$tempDir/" . $fileSSL, "w");
