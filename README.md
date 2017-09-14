@@ -9,6 +9,6 @@ I would also suggest adding a cron job that would delete any files older than 60
 /usr/bin/find /path/to/the/tmp-folder/tmp -mindepth 1 -mmin +1 -exec rm -rf {} \;
 ```
 
-Here is a video + blog post where you could see the simple script in action:
+Here is a blog post where you could see the simple script in action:
 
-[Video and Blog Post](https://www.google.com)
+[Blog Post](https://bobbyiliev.com/blog/php-ssl-pfx-convertion)
